@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Define array of repo names
-REPOS=("BaseOS" "extras" "AppStream" "epel" )
+REPOS=("BaseOS" "extras" "AppStream")
 local_repo_dir="/repo"
 # Download packages from each repo
 for REPO in "${REPOS[@]}"; do
-    reposync --newest-only --download-metadata --downloadcomps -p "$local_repo_dir" 2>&1
+    reposync --newest-only 
 done
 
 # Create a tarball of files that were modified within the last 30 days
