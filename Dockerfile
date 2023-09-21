@@ -6,7 +6,7 @@ ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Update system and install necessary packages
 RUN dnf install -y epel-release \
-    && Define update -y \
+    && dnf update -y \
     && dnf install -y yum-utils
 
 
