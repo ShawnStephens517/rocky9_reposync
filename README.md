@@ -4,7 +4,7 @@ This project is used to maintain offline Rocky Repos. The included syncfile.sh i
 of reposync commands for common update repos (EPEL, Appstream, Extras). I run the following command
 on the build machine (local OS)
 ```
-docker run -w /repos --rm -it -v ~/Desktop/Patches/:/repos ghcr.io/shawnstephens517/rocky9_reposync_container:main sh /tmp/syncfile.sh
+docker run -w /repos --rm -it -v ~/Desktop/Patches/:/repos ghcr.io/shawnstephens517/rocky9_reposync:main sh /tmp/syncfile.sh
 ```
 
 **_Modify Source Path_**
